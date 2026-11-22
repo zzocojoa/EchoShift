@@ -1,0 +1,33 @@
+{
+  "schema_version": 1,
+  "contract_id": "g0-measurement-v1",
+  "device_role": "D01",
+  "sample_rate_hz": 48000,
+  "channels": 1,
+  "sample_format": "PCM_S16LE",
+  "profiles": {
+    "diag-16-22": { "min_hz": 16000, "max_hz": 22000 },
+    "candidate-20-22": { "min_hz": 20000, "max_hz": 22000 }
+  },
+  "tx_trial_frames": 480000,
+  "tx_prefix_frames": [0, 96000],
+  "tx_active_frames": [96000, 384000],
+  "tx_suffix_frames": [384000, 480000],
+  "chirps_per_trial": 60,
+  "chirp_frames": 960,
+  "chirp_period_frames": 4800,
+  "first_direction": "up",
+  "scenes": {
+    "no_plate": null,
+    "plate_050": 0.5,
+    "plate_100": 1.0
+  },
+  "repetitions_per_cell": 5,
+  "first_attempt_trial_count": 30,
+  "first_attempt_chirp_denominator": 1800,
+  "valid_chirps_min_total": 1710,
+  "valid_chirps_min_trial": 57,
+  "valid_baseline_trials_min_per_profile": 4,
+  "reflection_passes_min_per_distance_and_profile": 4,
+  "reflection_margin_min_db": 6
+}

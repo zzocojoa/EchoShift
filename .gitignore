@@ -1,0 +1,70 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+dev-debug.log
+
+# Dependency directories
+node_modules/
+
+# Environment variables
+.env
+
+# Editor directories and files
+.idea
+.vscode
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# OS specific
+.DS_Store
+
+# EchoShift G0 publication safety: keep the blinded scene mapping reconstructors local.
+/outputs/g0-task1/coordinator/
+/outputs/g0-task1/batch-meta-v1.json
+/.taskmaster/scripts/build-g0-batch-v1.mjs
+
+# Local settings and credentials, not Android build source.
+.env*
+.npmrc
+.netrc
+.pypirc
+.git-credentials
+credentials/
+secrets/
+local.properties
+keystore.properties
+*.keystore
+*.jks
+*.p12
+*.pfx
+*.pem
+*.key
+*.crt
+.gradle/
+/.taskmaster/config.json
+/.taskmaster/state.json
+
+# Physical captures, audio and generated local dashboard state.
+recordings/
+captures/
+*.wav
+*.pcm
+*.raw
+*.m4a
+*.aac
+*.mp3
+*.flac
+*.ogg
+*.opus
+*.aif
+*.aiff
+*.caf
+/outputs/g0-taskmaster-dashboard/
+/outputs/g0-taskmaster-tasks.json
+/qa/g0-dashboard-qa-*/
